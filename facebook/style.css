@@ -1,0 +1,29 @@
+.navbar > .navbar-inner > .brand {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar > .navbar-inner > p {
+    margin: auto;
+    padding-top: 10px;
+    padding-right: 20px;
+    float: right;
+}
+
+.likes {
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.likes > .number {
+    font-size: 120px;
+    padding-top: 15%;
+    line-height: 1;
+}
+
+.likes > p {
+    font-size: 30px;
+}
