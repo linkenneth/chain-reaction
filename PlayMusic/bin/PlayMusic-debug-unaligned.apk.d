@@ -2,4 +2,7 @@
 /home/link/code/chain-reaction/PlayMusic/bin/PlayMusic.ap_ \
 /home/link/code/chain-reaction/PlayMusic/bin/classes.dex \
 /opt/android-sdk-linux/tools/support/annotations.jar \
+<<<<<<< .merge_file_gyv3wQ
 /home/link/code/chain-reaction/PlayMusic/libs/mail.jar \
+=======
+>>>>>>> .merge_file_lq5wDN

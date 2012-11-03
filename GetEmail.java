@@ -4,16 +4,7 @@ import java.util.*;
 import javax.mail.*;
 import javax.mail.internet.*;
 
-import android.app.Activity;
-import android.view.View;
-import android.widget.Button;
-import android.media.MediaPlayer;
-import android.os.Bundle;
-import android.widget.TextView;
-
-public class MainActivity extends Activity {
-
-    private MediaPlayer player;
+public class GetEmail {
 
     private static String username = "goldberg.chain.reaction";
     private static String passwd = "n0n0n0n0";
@@ -26,12 +17,7 @@ public class MainActivity extends Activity {
         }
     }
 
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-        player = MediaPlayer.create(this, R.raw.georgia);
+    public static void main(String[] args) {
 
         Properties props = new Properties();
         props.put("mail.imaps.host", host);
@@ -47,7 +33,6 @@ public class MainActivity extends Activity {
             store.connect(host, email, passwd);
 
             Folder inbox; Message[] msgs;
-            TextView tv = (TextView) findViewById(R.id.tv);
 
             inbox = store.getFolder("INBOX");
 
@@ -57,13 +42,13 @@ public class MainActivity extends Activity {
             while (msgs.length <= count) {
                 inbox.close(false);
                 java.lang.Thread.sleep(2000);
-                tv.setText(msgs.length + " messages in INBOX.");
+                System.out.println(msgs.length + " messages in INBOX.");
                 inbox = store.getFolder("INBOX");
                 inbox.open(Folder.READ_ONLY);
                 msgs = inbox.getMessages();
             }
 
-            playSong();
+            System.out.println("=== MUSIC TRIGGER ===");
 
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -71,12 +56,5 @@ public class MainActivity extends Activity {
 
     }
 
-<<<<<<< .merge_file_flkoOH
-    public void playSong() {
-=======
-    public void playSong(View view) {
->>>>>>> .merge_file_FlAD4G
-        player.start();
-    }
-
 }
+
