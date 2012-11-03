@@ -1,0 +1,1 @@
+This node of the chain will use Python3 to talk to an Arduino UNO in serial and make it move a servo that will trigger a rubber band gun.
