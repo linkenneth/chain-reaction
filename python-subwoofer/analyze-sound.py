@@ -8,6 +8,7 @@
 ## To test it out, run it and shout at your microphone:
 
 import alsaaudio, time, audioop
+import numpy.fft
 
 # Open the device in nonblocking capture mode. The last argument could
 # just as well have been zero for blocking mode. Then we could have
@@ -28,10 +29,25 @@ inp.setformat(alsaaudio.PCM_FORMAT_S16_LE)
 # mode.
 inp.setperiodsize(160)
 
+def cluster(data):
+    for i in range(0, len(data), 2):
+        yield ord(data[i]) + (ord(data[i+1]) << 8)
+
+def peak_frequency(samples, sample_rate):
+    """ returns (peak_freq, amplitude) """
+    np_samples = numpy.array(samples)
+    spectrum = numpy.fft.rfft(np_samples)
+    frequencies = sample_rate * numpy.fft.fftfreq(np_samples.shape[-1])
+    return max(
+        zip(list(frequencies), list(spectrum.real)), key = lambda x: abs(x[1])
+        )
+
 while True:
     # Read data from device
     l, data = inp.read()
     if l:
-    	# Return the maximum of the absolute value of all samples in a fragment.
-    	print audioop.max(data, 2)
+        c = cluster(data)
+        # Sampled at 8000 / sec, but only sampled 160 samples
+        peak_freq, ampl = peak_frequency(list(c), 8000)
+        print peak_freq, ampl
     time.sleep(.001)

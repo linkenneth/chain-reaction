@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        player = MediaPlayer.create(this, R.raw.georgia);
+        player = MediaPlayer.create(this, R.raw.yalaso);
 
         Properties props = new Properties();
         props.put("mail.imaps.host", host);
