@@ -1,6 +1,10 @@
 <resources>
 
     <string name="app_name">PlayMusic</string>
+<<<<<<< .merge_file_dd35mM
     <string name="button_play">Play Music</string>
+=======
+    <string name="text_view">Inbox status</string>
+>>>>>>> .merge_file_b7tPdM
 
 </resources>
