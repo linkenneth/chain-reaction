@@ -2,6 +2,6 @@
 
     <string name="app_name">PlayMusic</string>
     <string name="button_play">Play Music</string>
-    
+    <string name="text_view">Inbox status</string>
 
 </resources>

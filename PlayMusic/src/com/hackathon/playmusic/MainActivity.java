@@ -18,8 +18,8 @@ public class MainActivity extends Activity {
     }
 
     public void playSong (View view) {
+        Button pButton = (Button) view;
         player.start();
-        Button pButton = (Button) findViewById(R.id.play_button);
         pButton.setText("Stop Playing");
     }
 }

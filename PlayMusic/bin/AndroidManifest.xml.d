@@ -1,2 +1,2 @@
-/Users/MichaelLin/Documents/Hacks/ChainReaction/chain-reaction/PlayMusic/bin/AndroidManifest.xml : \
-/Users/MichaelLin/Documents/Hacks/ChainReaction/chain-reaction/PlayMusic/AndroidManifest.xml \
+/home/link/code/chain-reaction/PlayMusic/bin/AndroidManifest.xml : \
+/home/link/code/chain-reaction/PlayMusic/AndroidManifest.xml \
