@@ -12,11 +12,11 @@ $(function() {
       dataType: "json",
       success: function(data) {
 	var count = data["likes"] ? data["likes"]["count"] : 0;
-	$(".number").html(count);
-	if (count < 50) {
+	$(".number").text(count);
+	if (count < 1) {
 	  setTimeout(checkLikes, 5000);
 	} else {
-	  // trigger rest of chain
+	  $(".number").text("COMMENCE CHAIN");
 	}
       }
     });
