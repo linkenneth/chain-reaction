@@ -71,12 +71,7 @@ public class MainActivity extends Activity {
 
     }
 
-<<<<<<< .merge_file_flkoOH
     public void playSong() {
-=======
-    public void playSong(View view) {
->>>>>>> .merge_file_FlAD4G
         player.start();
     }
-
 }
