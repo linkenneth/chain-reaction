@@ -1,2 +1,3 @@
-facebook -> arduino -> ball/ramp -> mouse -> twilio -> google voice ->
-javamail -> android -> subwoofer -> rubber band gun -> dominos -> sorting
+node -> facebook -> node trigger -> arduino -> ball/ramp -> mouse -> twilio
+-> google voice -> javamail -> android -> subwoofer -> rubber band gun ->
+dominos -> sorting
