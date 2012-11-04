@@ -27,7 +27,7 @@ inp.setformat(alsaaudio.PCM_FORMAT_S16_LE)
 # This means that the reads below will return either 320 bytes of data
 # or 0 bytes of data. The latter is possible because we are in nonblocking
 # mode.
-inp.setperiodsize(160)
+inp.setperiodsize(1020)
 
 def cluster(data):
     for i in range(0, len(data), 2):
@@ -38,16 +38,35 @@ def peak_frequency(samples, sample_rate):
     np_samples = numpy.array(samples)
     spectrum = numpy.fft.rfft(np_samples)
     frequencies = sample_rate * numpy.fft.fftfreq(np_samples.shape[-1])
+    indexbounds = getrange(frequencies, 1000, 1500)
+    # print abs(sum(spectrum.real[indexbounds[0]:indexbounds[1]])/((indexbounds[1]-indexbounds[0])*sample_rate))
     return max(
         zip(list(frequencies), list(spectrum.real)), key = lambda x: abs(x[1])
         )
 
+def getrange(A, low, high):
+    L = None
+    H = None
+    for i in range(len(A)):
+        if (L is None) and A[i] > low:
+            L = i
+        if (H is None) and (A[i] > high):
+            H = i
+            break;
+    if L is None or H is None:
+        raise ValueException
+    return (L, H)
+
 while True:
     # Read data from device
     l, data = inp.read()
+    if len(data) != 0:
+        print len(data)
     if l:
         c = cluster(data)
         # Sampled at 8000 / sec, but only sampled 160 samples
-        peak_freq, ampl = peak_frequency(list(c), 8000)
-        print peak_freq, ampl
+        i = list(c)
+        print len(i)
+        peak_freq, ampl = peak_frequency(i, 8000)
+        # print peak_freq, ampl
     time.sleep(.001)
