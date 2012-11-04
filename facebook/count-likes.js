@@ -11,7 +11,7 @@ $(function() {
       url: URL,
       dataType: "json",
       success: function(data) {
-	var count = data["likes"] ? data["likes"]["count"] : 0;
+	var count = data["likes"] ? data["likes"]["count"] : 10;
 	$(".number").text(count);
 	if (count < 1) {
 	  setTimeout(checkLikes, 5000);
