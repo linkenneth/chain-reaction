@@ -1,0 +1,42 @@
+======================================
+= Chain Reaction Hack - More is More =
+======================================
+
+      _           _                              _   _             
+  ___| |__   __ _(_)_ __     _ __ ___  __ _  ___| |_(_) ___  _ __  
+ / __| '_ \ / _` | | '_ \   | '__/ _ \/ _` |/ __| __| |/ _ \| '_ \ 
+| (__| | | | (_| | | | | |  | | |  __/ (_| | (__| |_| | (_) | | | |
+ \___|_| |_|\__,_|_|_| |_|  |_|  \___|\__,_|\___|\__|_|\___/|_| |_|
+                                                                   
+
+--- Design
+-------------------------------------------
+
+In the beginning there was God, and a Node.js server hosting a single
+static HTML page. However, this was no ordinary HTML page.
+
+
+--- APIs/languages/tools used
+-------------------------------------------
+
+- Node.js
+- JavaScript
+- jQuery - AJAX
+- HTML
+- CSS
+- BootStrap
+- Facebook Graph API
+- Bash scripting
+- Arduino - servo hacking
+- Python serial
+- Physics
+- Tkinter
+- Twilio
+- Google Voice
+- JavaMail
+- Android
+- (PyALSA / PyALSAAudio)
+- (NumPy for FFT frequency capturing)
+
+
+
