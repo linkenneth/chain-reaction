@@ -4,4 +4,8 @@ rubber band gun -> dominos -> sorting
 
 node -> web page -> facebook -> node trigger -> arduino -> rubber band gun
 -> ball/ramp -> dominos -> mouse -> twilio -> google voice -> javamail ->
-android -> subwoofer -> (accelerometer, frequency-trigger) -> sorting
+android -> subwoofer -> (frequency-trigger) -> sorting
+
+node -> web page -> facebook -> node trigger -> arduino -> rubber band gun
+-> ball/ramp -> dominos -> mouse -> twilio -> google voice -> javamail ->
+android -> subwoofer -> frequency-trigger -> facebook "I have 50 likes"
