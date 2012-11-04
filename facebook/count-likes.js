@@ -1,5 +1,5 @@
 $(function() {
-  var ACCESS_TOKEN = "AAACEdEose0cBANcl8w1uVJ4xLoyoMypcZBKC28oFdvKNAysVTAykvA0ibekWbnofSbrsXwwHOgmZADN78tG8zPk0ZBxgp6S3ZA1DZA8NWLAZDZD"
+  var ACCESS_TOKEN = "AAACEdEose0cBAKtElJIdjj4ZAoiqvYYhUpfsosJbLqpZAc2kMJlgiWzTDAeimcHeTfd3Tzezm2j50pZAlKU2w8mUqD1QAgsucfCsmqrJAZDZD"
   var HACK_UID = "276905079008757"
   var MY_UID = "607556004"
   var POST_UID = "607556004_10151270295981005"
@@ -11,7 +11,7 @@ $(function() {
       url: URL,
       dataType: "json",
       success: function(data) {
-	var count = data["likes"] ? data["likes"]["count"] : 0;
+	var count = data["likes"] ? data["likes"]["count"] : 10;
 	$(".number").text(count);
 	if (count < 1) {
 	  setTimeout(checkLikes, 5000);

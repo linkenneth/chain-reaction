@@ -1,1 +1,3 @@
-echo "CHAIN REACTION STARTED LOLOLOL"
+cd ../arduino
+python3 SerialCmd.py
+
