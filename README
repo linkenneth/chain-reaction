@@ -38,15 +38,11 @@ So began the Genesis.
 
 Whenever there was love, there was bound to be jealousy. Node, on the other
 side of the universe, was especially jealous of all this attention that the
-teenage girl was getting.
+teenage girl was getting. In its rage, Node unleashed a massive
+thunderstorm on the newly formed Earth.
 
-================================================================================
-Of course, there could never truly be nothing, because without any
-substance there cannot be any change (x(t) = 0 for all t implies dx/dt = 0
-for all t). What this universe (or lack thereof) did not know was that
-there was another, alternate universe, secretly monitoring its activity,
-specifically of that one desperate teenage-girl-Facebook-post.
-================================================================================
+-- TO BE CONTINUED --
+
 
 TLDR: Node.js server -> static web page -> queries Facebook post for likes
 -> on certain number of likes, sends post request to server -> Node server
