@@ -36,12 +36,7 @@ teenage-girl-Facebook-post had a bit of love, maybe it'll finally shut up.
 
 So began the Genesis.
 
-Whenever there was love, there was bound to be jealousy. Node, on the other
-side of the universe, was especially jealous of all this attention that the
-teenage girl was getting. In its rage, Node unleashed a massive
-thunderstorm on the newly formed Earth.
-
--- TO BE CONTINUED --
+![Alt text](photo.JPG "The Chain Reaction")
 
 
 TLDR: Node.js server -> static web page -> queries Facebook post for likes
