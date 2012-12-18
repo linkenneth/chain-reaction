@@ -38,7 +38,7 @@ teenage-girl-Facebook-post had a bit of love, maybe it'll finally shut up.
 
 So began the Genesis.
 
-![Alt text](./photo.JPG "The Chain Reaction")
+![Alt text](linkenneth/chain-reaction/photo.JPG "The Chain Reaction")
 
 
 TLDR: Node.js server -> static web page -> queries Facebook post for likes
