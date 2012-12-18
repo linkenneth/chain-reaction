@@ -1,15 +1,17 @@
 ======================================
-= Chain Reaction Hack - More is More =
+Chain Reaction Hack - More is More
 ======================================
 
+<pre>
       _           _                              _   _             
   ___| |__   __ _(_)_ __     _ __ ___  __ _  ___| |_(_) ___  _ __  
  / __| '_ \ / _` | | '_ \   | '__/ _ \/ _` |/ __| __| |/ _ \| '_ \ 
 | (__| | | | (_| | | | | |  | | |  __/ (_| | (__| |_| | (_) | | | |
  \___|_| |_|\__,_|_|_| |_|  |_|  \___|\__,_|\___|\__|_|\___/|_| |_|
                                                                    
+ </pre>
 
---- Synopsis
+Synopsis
 -------------------------------------------
 
 This was a project we made for the Hackers at Berkeley Chain Reaction
@@ -18,7 +20,7 @@ ensure that we finish it, we were given first place overall for the best
 performance and the project that most embodied the spirit of the
 hackathon.
 
---- Design
+Design
 -------------------------------------------
 
 In the beginning there was God, and a Node.js server hosting a single
@@ -36,7 +38,7 @@ teenage-girl-Facebook-post had a bit of love, maybe it'll finally shut up.
 
 So began the Genesis.
 
-![Alt text](photo.JPG "The Chain Reaction")
+![Alt text](./photo.JPG "The Chain Reaction")
 
 
 TLDR: Node.js server -> static web page -> queries Facebook post for likes
@@ -52,10 +54,8 @@ Still TLDR: node -> web page -> facebook -> node trigger -> arduino ->
 rubber band gun -> ball/ramp -> dominos -> mouse -> twilio -> google voice
 -> javamail -> android -> music
 
-Written by: Kenneth Lin
 
-
---- APIs/languages/tools used
+APIs/languages/tools used
 -------------------------------------------
 
 - Node.js
